@@ -23,7 +23,6 @@ def get_img_base64(file_path):
 # 3. CSS STYLING (MERGED: HEADER + CONTENT)
 st.markdown("""
     <style>
-    /* Global Styles */
     .stApp {
         background-color: #FFFFFF;
         color: #000000; 
@@ -102,7 +101,7 @@ st.markdown("""
 
     /* --- SDG SECTION STYLES --- */
     .sdg-container {
-        background-color: #E69F00; /* SDG 12 Orange */
+        background-color: #E69F00; 
         color: black;
         border-radius: 15px;
         padding: 40px;
@@ -186,6 +185,50 @@ st.markdown("""
         color: black; 
         background-color: rgba(0,0,0,0.05); 
     }
+    
+    @media only screen and (max-width: 768px) {
+    .fixed-header {
+        height: 60px;
+        padding: 0 15px;
+    }
+    
+    .header-logo {
+        height: 35px;
+    }
+    
+    .header-tagline {
+        display: none;
+    }
+
+    .header-right {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .block-container {
+        padding-top: 80px !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .sdg-container {
+        flex-direction: column;
+        padding: 25px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .sdg-image-box {
+        flex: 0 0 auto;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .sdg-title {
+        font-size: 18px;
     </style>
 """, unsafe_allow_html=True)
 
