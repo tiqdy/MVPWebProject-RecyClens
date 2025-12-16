@@ -28,14 +28,12 @@ def get_base64_of_bin_file(bin_file):
 # 3. CSS STYLING
 st.markdown("""
     <style>
-    /* Global Styles */
     .stApp {
         background-color: #FFFFFF;
         color: #000000; 
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
-    /* --- RESPONSIVE CONTAINER --- */
     .block-container {
         max-width: 1200px !important;
         padding-top: 70px !important; 
@@ -44,13 +42,11 @@ st.markdown("""
         margin: auto !important;
     }
 
-    /* Hide Streamlit Header/Footer */
     [data-testid="stHeader"] { display: none; }
     [data-testid="stSidebar"] { display: none; }
     #MainMenu { visibility: hidden; }
     footer { visibility: hidden; }
     
-    /* --- STICKY HEADER STYLING --- */
     .fixed-header {
         position: fixed;
         top: 0;
@@ -90,7 +86,6 @@ st.markdown("""
         align-items: center;
     }
     
-    /* Nav Links */
     .nav-link {
         color: #000000;      
         text-decoration: none !important;
@@ -106,7 +101,6 @@ st.markdown("""
         cursor: pointer;
     }
 
-    /* --- TYPOGRAPHY --- */
     .main-desc {
         text-align: center;
         font-size: 22px;
@@ -124,7 +118,6 @@ st.markdown("""
         margin-bottom: 20px;
     }
 
-    /* --- CAMERA STYLING --- */
     [data-testid="stCameraInput"] {
         width: 100% !important;
         margin: 0 auto;
@@ -163,7 +156,6 @@ st.markdown("""
         color: #FFFFFF !important;
     }
 
-    /* --- RESULT CARD STYLES --- */
     
     /* SUCCESS (Green) */
     .result-card-success {
@@ -205,7 +197,6 @@ st.markdown("""
         margin-bottom: 5px;
     }
 
-    /* Shared Styles */
     .result-value {
         font-size: 36px; 
         font-weight: 900;
@@ -219,7 +210,6 @@ st.markdown("""
         margin-top: 5px;
     }
 
-    /* Custom Button Styling */
     div.stButton > button {
         background-color: #2E7D32;
         color: white;
@@ -234,6 +224,44 @@ st.markdown("""
     div.stButton > button:hover {
         background-color: #000000;
         color: white;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .fixed-header {
+            padding: 0 15px; 
+            height: 70px;    
+        }
+        .header-logo {
+            height: 35px;    
+        }
+        .header-tagline {
+            display: none;   
+        }
+        
+        .nav-link {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        .header-right {
+            gap: 15px;       
+        }
+
+        .block-container {
+            padding-top: 80px !important; 
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+
+        .main-desc {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .section-header {
+            font-size: 20px;
+        }
+        .result-value {
+            font-size: 28px; 
+        }
     }
     </style>
     """, unsafe_allow_html=True)
@@ -366,3 +394,4 @@ with c2:
             """,
             height=0
         )
+        
