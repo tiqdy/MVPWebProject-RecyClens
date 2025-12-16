@@ -1,0 +1,7 @@
+0 Battery
+1 Biological Waste
+2 Cardboard
+3 Paper
+4 Glass
+5 Metal
+6 Plastic
