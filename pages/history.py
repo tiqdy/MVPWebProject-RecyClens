@@ -166,6 +166,64 @@ st.markdown("""
         background-color: #B71C1C;
         color: white;
     }
+    
+
+    @media only screen and (max-width: 768px) {
+        
+        
+        .fixed-header {
+            height: 60px;
+            padding: 0 15px;
+        }
+        .header-logo {
+            height: 35px;
+        }
+        .header-tagline {
+            display: none;
+        }
+        .header-right {
+            gap: 15px;
+        }
+        .nav-link {
+            font-size: 14px;
+        }
+
+    
+        .block-container {
+            padding-top: 80px !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+
+        .history-card {
+            padding: 15px;       
+            margin-bottom: 10px;
+        }
+        
+        .h-item {
+            font-size: 16px;     
+        }
+        
+        .h-time {
+            font-size: 12px;    
+        }
+        
+        .h-conf {
+            font-size: 12px;     
+            padding: 4px 8px;
+        }
+
+        div.stButton > button {
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        h1 {
+            font-size: 28px !important; 
+        }
+    }
+    
+    
 </style>
 """, unsafe_allow_html=True)
 
