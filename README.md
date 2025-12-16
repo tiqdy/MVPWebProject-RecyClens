@@ -1,7 +1,7 @@
 ♻️ RecycLens is an AI-powered MVP web application that detects and classifies waste types from images to support smarter and more responsible recycling decisions. The app leverages image classification to help users quickly identify common waste categories through a simple web interface.
 🌐 Live App: https://recyclens.streamlit.app/
 
-🚀 Project Overview
+🚀
 Improper waste sorting is a major challenge in effective recycling. RecycLens addresses this issue by using Artificial Intelligence (Computer Vision) to classify waste based on images uploaded or captured by users. This project serves as a Minimum Viable Product (MVP) to demonstrate how AI can be applied to environmental sustainability.
 The application is built to be lightweight, accessible, and easy to use, making it suitable for educational purposes, demonstrations, and early-stage product validation.
 
