@@ -198,6 +198,78 @@ st.markdown("""
     
     ul { margin-top: 10px; margin-bottom: 10px; }
     li { margin-bottom: 8px; font-size: 18px; }
+    
+   
+    @media only screen and (max-width: 768px) {
+        
+       
+        .fixed-header {
+            height: 60px;
+            padding: 0 15px;
+        }
+        .header-logo {
+            height: 35px;
+        }
+        .header-tagline {
+            display: none; 
+        }
+        .header-right {
+            gap: 15px;
+        }
+        .nav-link {
+            font-size: 14px;
+        }
+
+      
+        .block-container {
+            padding-top: 80px !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+
+       
+        .title-container {
+            margin-bottom: 10px;
+        }
+        .main-page-title {
+            font-size: 32px; 
+        }
+        .page-close-btn {
+            width: 32px;
+            height: 32px;
+        }
+
+       
+        .hero-container {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+      
+        .image-grid {
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px;
+        }
+        .image-grid img {
+            height: 120px; /* Smaller image height */
+        }
+
+        
+        .content-box {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .box-title {
+            font-size: 18px;
+        }
+        .box-text, li {
+            font-size: 15px; /* Readable text size */
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
