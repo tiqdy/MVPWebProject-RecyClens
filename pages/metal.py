@@ -4,8 +4,8 @@ import os
 
 # 1. PAGE CONFIGURATION
 st.set_page_config(
-    page_title="Paper - RecycLens",
-    page_icon="📄",
+    page_title="Metal - RecycLens",
+    page_icon="🔩",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -18,7 +18,6 @@ def get_img_base64(file_path):
             return f"data:image/png;base64,{base64.b64encode(data).decode()}"
     except FileNotFoundError:
         return "https://via.placeholder.com/400x300?text=Image+Not+Found"
-
 
 # 3. CSS STYLING
 st.markdown("""
@@ -132,7 +131,7 @@ st.markdown("""
 
     /* --- HERO SECTION --- */
     .hero-container {
-        background-color: #F5F5F5; 
+        background-color: #CFD8DC; 
         padding: 40px;
         border-radius: 15px; 
         margin-bottom: 40px;
@@ -272,7 +271,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
 # 4. FIXED HEADER
 try:
     logo_path = "images/recyclenslogo.png"
@@ -304,7 +302,7 @@ close_icon_src = get_img_base64("images/xicon.png")
 
 st.markdown(f"""
 <div class="title-container">
-    <div class="main-page-title">PAPER</div>
+    <div class="main-page-title">METAL</div>
     <a href="/about" target="_self">
         <img src="{close_icon_src}" class="page-close-btn" title="Close">
     </a>
@@ -312,15 +310,15 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Image Loading 
-img1 = get_img_base64("images/paperpage/paper1.jpg") 
-img2 = get_img_base64("images/paperpage/paper2.jpeg") 
-img3 = get_img_base64("images/paperpage/paper3.jpg") 
-img4 = get_img_base64("images/paperpage/paper4.jpg") 
+img1 = get_img_base64("images/metalpage/metal1.jpg") 
+img2 = get_img_base64("images/metalpage/metal2.jpg") 
+img3 = get_img_base64("images/metalpage/metal3.jpeg") 
+img4 = get_img_base64("images/metalpage/metal4.jpg") 
 
 # HERO SECTION
 st.markdown(f"""
 <div class="hero-container">
-    <div class="hero-subtitle">A Valuable Resource That Deserves a Second Use</div>
+    <div class="hero-subtitle">Valuable Material, Worth Recycling</div>
     <div class="image-grid">
         <img src="{img1}">
         <img src="{img2}">
@@ -328,26 +326,24 @@ st.markdown(f"""
         <img src="{img4}">
     </div>
     <div style="font-size: 20px; font-weight: 500;">
-        Paper waste includes products made primarily from wood pulp. Most paper is recyclable 
-        when it is clean and dry. It is one of the most common types of household trash 
-        but offers significant potential for reuse.
+        Metal waste includes items made from ferrous (iron-based) and non-ferrous metals 
+        (aluminum, copper, tin, etc.). Most metals can be recycled repeatedly without losing quality.
     </div>
 </div>
 """, unsafe_allow_html=True)
 
 
 # 6. INFO BOXES
-
 # Box 1 (Yellow) - Problem
 st.markdown("""
 <div class="content-box box-yellow">
-    <div class="box-title">⚠️ Why Paper Waste Matters</div>
+    <div class="box-title">⚠️ Why Metal Waste Matters</div>
     <div class="box-text">
-        Paper waste is one of the most common types of household trash. Improper disposal leads to:
+        When metal is not recycled:
         <ul>
-            <li>Excessive tree harvesting</li>
-            <li>Higher energy and water consumption</li>
-            <li>Increased landfill waste and methane emissions</li>
+            <li>Valuable natural resources are wasted</li>
+            <li>Mining new metals consumes high energy and water</li>
+            <li>Landfills accumulate long-lasting, non-biodegradable materials</li>
         </ul>
     </div>
 </div>
@@ -360,19 +356,19 @@ with col_left:
     # Box 2 - How to Dispose
     st.markdown("""
 <div class="content-box box-green">
-    <div class="box-title">♻️ How to Dispose of Paper Correctly</div>
+    <div class="box-title">♻️ How to Dispose of Metal Correctly</div>
     <div class="box-text">
         <strong>✅ Do:</strong>
         <ul>
-            <li>Keep paper clean and dry</li>
-            <li>Separate paper from plastic or metal attachments</li>
-            <li>Flatten or stack paper neatly</li>
+            <li>Rinse cans and containers before recycling</li>
+            <li>Flatten aluminum cans to save space</li>
+            <li>Separate metal from plastic or other materials</li>
         </ul>
         <strong>❌ Don’t:</strong>
         <ul>
-            <li>Recycle oily or food-stained paper</li>
-            <li>Include tissues, napkins, or paper towels</li>
-            <li>Recycle laminated or plastic-coated paper</li>
+            <li>Include metal with regular household waste</li>
+            <li>Mix small metal pieces with non-recyclables</li>
+            <li>Throw coated or contaminated metals into bins unless your local facility accepts them</li>
         </ul>
     </div>
 </div>
@@ -382,13 +378,13 @@ with col_right:
     # Box 3 - Benefits
     st.markdown("""
 <div class="content-box box-green">
-    <div class="box-title">🌱 Environmental Benefits of Recycling Paper</div>
+    <div class="box-title">🌱 Environmental Benefits of Recycling Metal</div>
     <div class="box-text">
         <ul>
-            <li>Saves trees and forests</li>
-            <li>Uses up to 60% less energy than making new paper</li>
-            <li>Reduces water pollution</li>
-            <li>Lowers greenhouse gas emissions</li>
+            <li>Conserves natural resources and reduces mining</li>
+            <li>Saves up to 95% of the energy compared to producing new aluminum</li>
+            <li>Reduces greenhouse gas emissions</li>
+            <li>Supports a circular economy</li>
         </ul>
     </div>
 </div>
