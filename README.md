@@ -17,4 +17,5 @@ This application is intended for educational and demonstration purposes only. Cl
 
 👩‍💻 Author
 Developed by Atiqah Pramudya
+
 University Student | AI & Web Development Enthusiast
