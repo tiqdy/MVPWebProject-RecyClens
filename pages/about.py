@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="About - RecycLens",
     page_icon="♻️",
     layout="wide",
-    initial_sidebar_state="extended"
+    initial_sidebar_state="collapsed"
 )
 
 
@@ -320,4 +320,5 @@ for i, item in enumerate(items):
         card_html = render_card(item['name'], item['color'], b64_img, item['link'])
         st.markdown(card_html, unsafe_allow_html=True)
         st.markdown("<br>", unsafe_allow_html=True)
+
 
