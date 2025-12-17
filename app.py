@@ -13,7 +13,7 @@ st.set_page_config(
     page_title="RecycLens",
     page_icon="♻️",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="extended"
 )
 
 # 2. HELPER FUNCTION FOR CLICKABLE IMAGE
@@ -395,3 +395,4 @@ with c2:
             height=0
         )
         
+
