@@ -263,7 +263,7 @@ st.markdown(f"""
         list-style: none;
         display: block;
         width: 65px;
-        height: 65px;
+        height: 80px;
         border-radius: 50%;
         background-color: #2E7D32; 
         
@@ -272,8 +272,8 @@ st.markdown(f"""
         background-repeat: no-repeat;
         background-position: center;
         
-        color: transparent !important; /* Hide text */
-        font-size: 0px !important;     /* Remove text space */
+        color: transparent !important; 
+        font-size: 0px !important;    
         
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         cursor: pointer;
@@ -507,3 +507,4 @@ if gemini_ready:
 
 else:
     pass
+
