@@ -263,7 +263,7 @@ st.markdown(f"""
         list-style: none;
         display: block;
         width: 65px;
-        height: 80px;
+        height: 65px;
         border-radius: 50%;
         background-color: #2E7D32; 
         
@@ -507,4 +507,5 @@ if gemini_ready:
 
 else:
     pass
+
 
