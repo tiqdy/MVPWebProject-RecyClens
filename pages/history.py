@@ -8,7 +8,7 @@ st.set_page_config(
     page_title="History - RecycLens",
     page_icon="🕒",
     layout="wide",
-    initial_sidebar_state="extended"
+    initial_sidebar_state="collapsed"
 )
 
 
@@ -312,4 +312,5 @@ with c_main:
                 <div class="h-conf">{conf:.1f}% Confidence</div>
             </div>
             """, unsafe_allow_html=True)
+
 
