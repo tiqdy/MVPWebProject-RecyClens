@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="Cardboard - RecycLens",
     page_icon="📦",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="extended"
 )
 
 # 2. HELPER FUNCTION (IMAGE TO BASE64)
@@ -393,3 +393,4 @@ with col_right:
     </div>
 </div>
     """, unsafe_allow_html=True)
+
