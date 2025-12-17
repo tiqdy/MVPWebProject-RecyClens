@@ -2,5 +2,5 @@ streamlit
 tensorflow==2.15.0
 pillow
 numpy
-openai
+google-generativeai
 python-dotenv
