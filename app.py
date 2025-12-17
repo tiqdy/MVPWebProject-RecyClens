@@ -267,13 +267,14 @@ st.markdown(f"""
         border-radius: 50%;
         background-color: #2E7D32; 
         
+        /* Local Image Injection */
         background-image: url('{chat_icon_url}'); 
         background-size: 35px; 
         background-repeat: no-repeat;
         background-position: center;
         
-        color: transparent !important; 
-        font-size: 0px !important;    
+        color: transparent !important; /* Hide text */
+        font-size: 0px !important;     /* Remove text space */
         
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         cursor: pointer;
@@ -287,7 +288,7 @@ st.markdown(f"""
         background-color: #1B5E20;
     }}
     
-
+    /* Remove Default Triangle Arrow */
     div[data-testid="stExpander"] > details > summary::-webkit-details-marker {{ display: none; }}
     div[data-testid="stExpander"] > details > summary > svg {{ display: none !important; }}
 
@@ -299,6 +300,7 @@ st.markdown(f"""
         border-top: 1px solid #eee;
     }}
 
+    /* Input Box: White background, Black text */
     div[data-testid="stForm"] input[type="text"] {{
         background-color: #FFFFFF !important;
         color: #000000 !important;
@@ -306,6 +308,7 @@ st.markdown(f"""
         border-radius: 8px !important;
     }}
     
+    /* Send Button: White background, Black text */
     div[data-testid="stForm"] button {{
         background-color: #FFFFFF !important;
         color: #000000 !important;
@@ -316,12 +319,52 @@ st.markdown(f"""
         background-color: #f0f0f0 !important;
         border: 1px solid #bbb !important;
     }}
-
+    
+/* --- MOBILE RESPONSIVE --- */
     @media only screen and (max-width: 768px) {{
-        .fixed-header {{ padding: 0 15px; height: 70px; }}
-        .header-logo {{ height: 35px; }}
-        .header-tagline {{ display: none; }}
-        .header-right {{ gap: 15px; }}
+        
+        /* 1. Header Adjustments */
+        .fixed-header {{ 
+            padding: 0 15px; 
+            height: 70px; 
+        }}
+        .header-logo {{ 
+            height: 35px; 
+        }}
+        .header-tagline {{ 
+            display: none; 
+        }}
+        .header-right {{ 
+            gap: 15px; 
+        }}
+        .nav-link {{ 
+            font-size: 14px; 
+        }}
+
+        .block-container {{
+            padding-top: 80px !important;
+            padding-left: 10px !important;  
+            padding-right: 10px !important; 
+        }}
+        
+        .main-desc, .section-header, .result-card-success, .result-card-error, div.stButton {{
+            padding-left: 20px;
+            padding-right: 20px;
+        }}
+
+        [data-testid="stCameraInput"] video, 
+        [data-testid="stCameraInput"] img {{
+            object-fit: cover !important;
+            width: 100% !important;
+            height: 100% !important;
+        }}
+        
+        [data-testid="stCameraInput"] > div:first-child {{
+            border-radius: 0px !important;
+            border: none !important;
+            background-color: transparent !important;
+        }}
+        
         div[data-testid="stExpander"] > details[open] {{ width: 300px; right: 10px; bottom: 80px; }}
         div[data-testid="stExpander"] {{ bottom: 20px; right: 20px; }}
     }}
@@ -434,7 +477,7 @@ with c2:
             if (anchor) { anchor.scrollIntoView({behavior: 'smooth', block: 'start'}); }
         </script>""", height=0)
 
-# 8. CHATBOT LOGIC
+# 8. CHATBOT LOGIC (Gemini)
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {"role": "assistant", "content": "Hi! I am RecycLens AI. Ask me how to recycle!"}
@@ -507,5 +550,3 @@ if gemini_ready:
 
 else:
     pass
-
-
