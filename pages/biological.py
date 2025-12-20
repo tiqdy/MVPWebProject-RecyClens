@@ -355,7 +355,6 @@ st.markdown("""
 <div class="content-box box-yellow">
     <div class="box-title">⚠️ Why Is Biological Waste a Problem?</div>
     <div class="box-text">
-        [Image of anaerobic decomposition in landfills]
         When biological waste is mixed with general trash and sent to landfills, it decomposes 
         without oxygen and produces methane gas, a powerful greenhouse gas that contributes to 
         climate change. Poor management of biological waste can also cause:
@@ -402,4 +401,5 @@ with col_right:
         </ul>
     </div>
 </div>
+
     """, unsafe_allow_html=True)
