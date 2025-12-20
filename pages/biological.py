@@ -376,7 +376,6 @@ with col_left:
 <div class="content-box box-green">
     <div class="box-title">♻️ How to Manage Biological Waste Properly</div>
     <div class="box-text">
-        [Image of composting layers diagram]
         <ul>
             <li>Separate organic waste from other trash</li>
             <li>Compost food and garden waste at home</li>
@@ -403,3 +402,4 @@ with col_right:
 </div>
 
     """, unsafe_allow_html=True)
+
