@@ -3,4 +3,4 @@ tensorflow==2.15.0
 pillow
 numpy
 google-generativeai
-python-dotenv
+
