@@ -1,49 +1,76 @@
-♻️ RecycLens: Smart Vision for Smarter Recycling
-RecycLens is an AI-powered web application designed to revolutionize how we handle waste. By leveraging computer vision and generative AI, RecycLens helps users identify, sort, and understand waste materials instantly, supporting SDG 12 (Responsible Consumption and Production).
+# ♻️ RecycLens
+### Smart Vision for Smarter Recycling
 
-🌐 Live App: https://recyclens.streamlit.app/
+> **💡 Mission Statement**
+> Improper waste sorting is a major barrier to effective recycling. **RecycLens** leverages computer vision and Generative AI to help users identify, sort, and understand waste materials instantly, supporting **SDG 12 (Responsible Consumption and Production)**.
 
-🚀 About The Project
-Improper waste sorting is a major barrier to effective recycling. RecycLens addresses this by providing an intelligent, accessible tool that classifies waste in real-time. Whether you are at home, school, or the office, RecycLens turns your camera into a smart recycling assistant.
+---
 
-This project is built as a functional prototype to demonstrate the practical application of Convolutional Neural Networks (CNN) and Large Language Models (LLM) in environmental sustainability.
+### 🌐 **Live Demo**
+👉 **[Click here to access RecycLens](https://recyclens.streamlit.app/)**
 
-✨ Key Features
-🔐 User Experience
-Secure Authentication: User-specific login system to manage sessions.
+---
 
-Personalized Profiles: Track your join date and membership status.
+## 🚀 **Overview**
 
-📸 AI-Powered Scanning
-Real-Time Classification: Instantly identifies waste using a custom-trained TensorFlow model.
+RecycLens addresses the challenge of waste classification by turning your camera into an intelligent recycling assistant. It serves as a functional **MVP (Minimum Viable Product)** demonstrating how AI can solve real-world sustainability problems.
 
-7 Supported Categories: Battery, Biological, Cardboard, Glass, Metal, Paper, and Plastic.
+| **Metric** | **Details** |
+| :--- | :--- |
+| **Type** | Web Application (PWA) |
+| **Focus** | Sustainability, AI, Education |
+| **Tech** | Streamlit, TensorFlow, Google Gemini |
 
-Intelligent Feedback: Displays a "Success" card for clear matches and a "Warning" card if the confidence score is too low (<80%), prompting a rescan.
+---
 
-🌍 Impact Tracking
-Personal History Log: Automatically saves your scan history to a database linked to your username.
+## ✨ **Key Features**
 
-Eco-Impact Calculator: Estimates the CO₂ savings (kg) and Energy conserved (Wh) based on your recycling history.
+### 🔐 **1. User Experience**
+> *Secure and personalized.*
+* **Authentication:** Simple, secure login system (Session State management).
+* **User Profiles:** Tracks join date, membership status, and activity.
+* **Session Security:** Auto-logout capability to protect user data.
 
-📚 Education & Assistance
-Context-Aware Learning: Dynamic "Read More" buttons guide you to specific educational pages based on the item detected (e.g., scanning a bottle leads to the Plastic guide).
+### 📸 **2. AI-Powered Scanner**
+> *Instant identification using MobileNetV2.*
+* **Real-Time Analysis:** Classifies waste in < 2 seconds.
+* **7 Supported Classes:**
+    * 🔋 `Battery`
+    * 🍏 `Biological`
+    * 📦 `Cardboard`
+    * 🥂 `Glass`
+    * 🔩 `Metal`
+    * 📄 `Paper`
+    * 🥤 `Plastic`
+* **Confidence Threshold:** Filters low-confidence results (<80%) to prevent misinformation.
 
-Integrated Chatbot: A floating AI assistant powered by Google Gemini 2.5 Flash to answer all your recycling questions.
+### 🌍 **3. Eco-Impact Tracker**
+> *Gamifying sustainability.*
+* **Personal History:** Logs every scan to a user-specific database.
+* **Impact Calculator:** Estimates your environmental contribution based on material type.
+    * *Formula:* `Total CO2 Saved` = $\sum (Count \times MaterialFactor)$
 
-🛠️ Tech Stack
-Frontend: Streamlit
+### 🤖 **4. AI Assistant**
+> *Powered by Google Gemini 2.5 Flash.*
+* **Floating Chatbot:** A non-intrusive assistant available on the home page.
+* **Context-Aware:** Capable of answering specific questions about how to clean or prepare items for recycling.
 
-Machine Learning: TensorFlow / Keras (MobileNetV2)
+---
 
-AI Integration: Google Generative AI (Gemini)
+## 🛠️ **Technical Stack**
 
-Data Handling: Pandas & NumPy
+| Component | Technology Used |
+| :--- | :--- |
+| **Frontend** | Streamlit (Python) |
+| **Computer Vision** | TensorFlow / Keras (CNN) |
+| **LLM Engine** | Google Generative AI (Gemini) |
+| **Data Handling** | Pandas & NumPy |
+| **Image Processing** | PIL (Python Imaging Library) |
 
-Deployment: Streamlit Cloud
+---
 
 ⚠️ Disclaimer
-This application is intended for educational and demonstration purposes. While the model achieves high accuracy (~90%), classification results may vary based on lighting and image quality. It should not be used as the sole basis for industrial waste management decisions.
+Note: This application is intended for educational and demonstration purposes. While the model achieves high accuracy (~90%), classification results may vary based on lighting and image quality. It should not be used as the sole basis for industrial waste management decisions.
 
 👩‍💻 Author
 Developed by Atiqah Pramudya University Student | AI & Web Development Enthusiast
