@@ -7,7 +7,7 @@
 ---
 
 ### 🌐 **Live Demo**
-👉 **[Click here to access RecycLens](https://recyclens.streamlit.app/)**
+👉 **https://recyclens.streamlit.app/**
 
 ---
 
@@ -30,6 +30,7 @@ RecycLens addresses the challenge of waste classification by turning your camera
 * **Authentication:** Simple, secure login system (Session State management).
 * **User Profiles:** Tracks join date, membership status, and activity.
 * **Session Security:** Auto-logout capability to protect user data.
+* **Password: 1234**
 
 ### 📸 **2. AI-Powered Scanner**
 > *Instant identification using MobileNetV2.*
